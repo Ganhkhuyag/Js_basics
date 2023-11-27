@@ -7,7 +7,7 @@ console.log(myAge);
 let num1 = 10;
 let num2 = 20;
 
-// let sum = num1 + num2;
+let sum = num1 + num2;
 let product = num1 * num2;
 let division = num1 / num2;
 let subtraction = num1 - num2;
@@ -22,10 +22,15 @@ console.log(subtraction);
 let answer = (y = x * x + 2 * x + 1);
 console.log(answer);
 
+// declare a variable called "number1" and "number2" and assign a value
+// and print out sum of the two variables
+
 let number1 = 10;
 let number2 = 20;
-let sum = number1 + number2;
-console.log(sum);
+
+let sum2 = number1 + number2;
+
+console.log(sum2);
 
 let x = 15;
 let y = 20;
@@ -43,11 +48,29 @@ if (myAge < 21) {
   console.log("you are allowed to enter:", myAge);
 }
 
-let myBrithYear = 1954;
-console.log(2023 - myBrithYear);
+let myBirthYear = 1998;
+console.log(2023 - myBirthYear);
 
-let myNumber = 30;
+let myNumber = 25;
 console.log("myNumber=", myNumber);
+
+let driving = 17;
+// 18 hursen bol masihn barij bolno. hureegvi bol masihn barij bolohgvi.
+if (driving < 18) {
+  console.log("bolohgvi", driving);
+} else {
+  console.log("bolno", driving);
+}
+
+if (myAge < 10) {
+  console.log("You are a child");
+} else if (myAge < 18) {
+  console.log("you are a teenage");
+} else if (myAge < 60) {
+  console.log("you are a adult");
+} else {
+  console.log("you are an elder");
+}
 
 let driver = 17;
 // 18 hursen bol mashin barij bolno. hureegvi bol mashin barij bolohgvi.
@@ -57,7 +80,7 @@ if (driver < 18) {
   console.log("bolohgvi");
 }
 
-let day = 7;
+let day = 3;
 if (1 == day) {
   console.log("Monday");
 } else if (2 == day) {
