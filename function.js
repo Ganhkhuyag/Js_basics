@@ -1,5 +1,6 @@
 // function declaration
 function doSomething(input) {
+  console.log(input);
   return input * input;
 }
 
@@ -19,6 +20,22 @@ function getSomething(input) {
 function returnSomething() {
   return "Hello World";
 }
+
+printHello();
+printHello();
+printHello();
+
+getSomething("MY TEXT");
+
+function getMultiInput(num1, num2) {
+  console.log("num1 = ", num1);
+  console.log("num2 = ", num2);
+  let sum = num1 + num2;
+  return sum;
+}
+let sum = getMultiInput(20, 30);
+
+console.log("sum", sum);
 
 function findDay(num) {
   if (num == 1) {
@@ -52,8 +69,19 @@ function findMonth(num) {
     return "oct";
   } else if (num <= 320) {
     return "nov";
-  } else if (num <= 360) {
+  } else if (num <= 350) {
     return "dec";
   }
 }
-console.log(findMonth(300));
+console.log(findMonth(100));
+
+function find(avg) {
+  if (avg < 60) {
+    return "F";
+  } else if (avg < 70) {
+    return "D";
+  } else if (avg < 80) {
+    return "C";
+  }
+}
+console.log(find(69));
