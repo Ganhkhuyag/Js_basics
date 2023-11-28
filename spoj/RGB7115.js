@@ -2,7 +2,7 @@ function findNumber(num) {
   if (num > 3) {
     return "tentssen";
   } else if (num < 3) {
-    return "tentseegvi";
+    return "unasan";
   }
 }
 console.log(findNumber(4));
