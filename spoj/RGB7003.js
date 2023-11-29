@@ -1,8 +1,7 @@
 function findSquarePerim(a, b) {
-  let product = a * b;
-  //   let perim = (a + b) * 2;
-  return product;
-  //   return perim;
+  let sum = a * b;
+  let product = (a + b) * 2;
+  console.log(sum, product);
 }
-let answer = findSquarePerim(6, 4);
-console.log("Answer:", answer);
+
+findSquarePerim(6, 4);
