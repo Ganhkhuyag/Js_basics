@@ -7,6 +7,5 @@ function bigNumber(num1, num2, num3) {
     return num3;
   }
 }
-
-let answer = bigNumber(1, 3, 2);
+let answer = bigNumber(1000, 404, 99099);
 console.log(answer);

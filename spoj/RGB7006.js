@@ -1,6 +1,6 @@
 function findTwoFunc(x) {
-  let answer = 4 * x * 2 - 3 * x + 5;
-  return answer;
+  let func = 4 * x * 2 - 3 * x + 5;
+  return func;
 }
-let sum = findTwoFunc(-2);
-console.log("Answer:", sum);
+let func = findTwoFunc(-2);
+console.log("Answer:", func);

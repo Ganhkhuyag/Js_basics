@@ -35,7 +35,7 @@ function getMultiInput(num1, num2) {
 }
 let sum = getMultiInput(20, 30);
 
-console.log("sum", sum);
+console.log("sum =", sum);
 
 function findDay(num) {
   if (num == 1) {
