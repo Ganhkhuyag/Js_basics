@@ -126,3 +126,11 @@ if (avg < 60) {
 } else if (avg < 80) {
   console.log("C");
 }
+
+// salary ni 2 sayaas ih,
+// niigmiin daatgaliin shimtgel toldog bh,
+// passporttoi eswel identity cardtai bh,
+// bas person eswel itgemjleheer bh,
+// dept ni 1 sayas baga bwal zeel garna.
+
+function dept(salary,ndsh,passport,person)

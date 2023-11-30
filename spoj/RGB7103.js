@@ -1,11 +1,11 @@
-function bigNumber(num1, num2, num3) {
-  if (num1 > num2) {
-    return num1;
-  } else if (num2 > num3) {
-    return num2;
-  } else if (num3 > num2) {
-    return num3;
+function bigNumber(a, b, c) {
+  if (a > b && a > c) {
+    return a;
+  } else if (b > a && b > c) {
+    return b;
+  } else if (c > a && c > b) {
+    return c;
   }
 }
-let answer = bigNumber(1000, 404, 99099);
+let answer = bigNumber(1, 3, 2);
 console.log(answer);
