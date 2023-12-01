@@ -10,4 +10,4 @@ function findSeason(num) {
   }
 }
 
-console.log(findSeason(5));
+console.log(findSeason(3));

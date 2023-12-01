@@ -132,5 +132,3 @@ if (avg < 60) {
 // passporttoi eswel identity cardtai bh,
 // bas person eswel itgemjleheer bh,
 // dept ni 1 sayas baga bwal zeel garna.
-
-function dept(salary,ndsh,passport,person)

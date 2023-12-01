@@ -10,4 +10,4 @@ function findSecond(s) {
   console.log(min, sec);
 }
 
-findSecond(200);
+findSecond(492);

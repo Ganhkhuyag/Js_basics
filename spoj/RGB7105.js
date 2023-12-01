@@ -7,4 +7,4 @@ function num(a, b, c, d) {
   return result;
 }
 let result = num(85, 75, 96, 69);
-console.log("Result", result);
+console.log("result", result);
