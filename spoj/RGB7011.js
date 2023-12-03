@@ -7,7 +7,8 @@
 function findSecond(s) {
   min = (s - (s % 60)) / 60;
   sec = s % 60;
-  console.log(min, sec);
+  return min, sec;
 }
 
-findSecond(492);
+let result = findSecond(492);
+console.log("result", min, sec);

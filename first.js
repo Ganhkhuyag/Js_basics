@@ -46,18 +46,28 @@ if (x > y) {
 }
 
 let myAge = 20;
+let eligible = myAge < 21;
 // hervee minii nas 21s baga bol baar orj bolohgvi.
-if (myAge < 21) {
+if (eligible) {
   console.log("you are not allowed to enter:", myAge);
 } else {
   console.log("you are allowed to enter:", myAge);
 }
 
-let myBrithYear = 1954;
+let myBrithYear = 1998;
 console.log(2023 - myBrithYear);
 
-let myNumber = 30;
+let myNumber = 25;
 console.log("myNumber=", myNumber);
+
+// Data Types
+let number1 = 15; // number type (all numbers negative / positive, decimal)
+let myString = "15"; // string type (collection of characters)
+let myBool = false; // boolean type (can contain only "true" or "false")
+
+console.log("number1=", number1);
+console.log("mystring=", myString);
+let myBoolean;
 
 let driver = 17;
 // 18 hursen bol mashin barij bolno. hureegvi bol mashin barij bolohgvi.
@@ -88,30 +98,30 @@ if (1 == day) {
 // jishee n 35 gevel 1r sard bish 2r sard baigaa bolhoor feburary
 // 65 gevel 3r sar buyu MARCH gesen text hevledeg
 
-let days = 201;
+let days = 365;
 if (days <= 31) {
   console.log("Jan");
-} else if (days <= 59) {
+} else if (days <= 31 + 28) {
   console.log("feb");
-} else if (days <= 90) {
+} else if (days <= 31 + 28 + 31) {
   console.log("mar");
-} else if (days <= 121) {
+} else if (days <= 31 + 28 + 31 + 30) {
   console.log("apr");
-} else if (days <= 151) {
+} else if (days <= 31 + 28 + 31 + 30 + 31) {
   console.log("may");
-} else if (days <= 169) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30) {
   console.log("jun");
-} else if (days <= 199) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30 + 31) {
   console.log("july");
-} else if (days <= 230) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31) {
   console.log("aug");
-} else if (days <= 260) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30) {
   console.log("sep");
-} else if (days <= 290) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31) {
   console.log("oct");
-} else if (days <= 330) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30) {
   console.log("nov");
-} else if (days <= 363) {
+} else if (days <= 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + 31) {
   console.log("dec");
 }
 
