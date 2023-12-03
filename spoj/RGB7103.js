@@ -7,5 +7,5 @@ function bigNumber(a, b, c) {
     return c;
   }
 }
-let result = bigNumber(1, 3, 2);
+let result = bigNumber(5, 3, 4);
 console.log(result);

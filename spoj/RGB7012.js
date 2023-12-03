@@ -11,7 +11,7 @@
 
 function findTimeMinSecond(s) {
   hour = (s - (s % 3600)) / 3600;
-  minute = (12 - (12 % 60)) / 60;
+  minute = ((s % 3600) - ((s % 3600) % 60)) / 60;
   sec = s % 60;
   console.log(hour, minute, sec);
 }

@@ -17,4 +17,4 @@ function loan(salary, id, pass, insurance, inperson, cred, dept) {
     console.log("no");
   }
 }
-loan(2100000, "false", "true", "true", "false", "false", 500000);
+loan(2100000, "true", "false", "true", "true", "false", 500000);

@@ -158,12 +158,12 @@ function loan(salary, insurance, inperson, cred, dept, passport, identityCard) {
 }
 loan(
   11,
-  1,
-  (inperson = true),
-  (cred = false),
-  500,
+  2,
+  (inperson = false),
+  (cred = true),
+  50000,
   (passport = false),
-  (identityCard = false)
+  (identityCard = true)
 );
 
 // if its raining today, take umberella

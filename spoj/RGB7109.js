@@ -1,8 +1,10 @@
-// 5tai tentsuu toonuudiig ol.
+// Ugugdsun 3 toon dotroos 5-tai tentsuu toonuudiig ol.
 
-function find5Equal(a,b,c){
-    if (a==b && ){
-        return 
-    }
-} 
-
+function f(a, b, c) {
+  let result = 0;
+  if (a == 5) {
+    result = result + ;
+  }
+}
+let result = f(2,5,5)
+console.log(result);

@@ -1,6 +1,5 @@
 function Secund(min, secund) {
-  sum = min - (min % 60) / 60;
-  product = secund % 60;
+  return min * 60 + secund;
 }
-secund(3, 4);
-console.log();
+let sum = Secund(3, 4);
+console.log(sum);

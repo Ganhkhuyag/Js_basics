@@ -1,6 +1,12 @@
+// let-> declare a variable
+// = -> assign a value
+// assignment -> suulgaj uguh
+//  "Ganbaa" -> value
+// "" -> quotation marks
 let firstName = "Ganbaa";
 // let myAge = 22;
 
+// console.log -> Ur dung hevleh command
 console.log(firstName);
 console.log(myAge);
 
@@ -26,6 +32,10 @@ let number1 = 10;
 let number2 = 20;
 let sum = number1 + number2;
 console.log(sum);
+
+let number = 15;
+number = number + 20;
+console.log(number);
 
 let x = 15;
 let y = 20;
@@ -126,9 +136,3 @@ if (avg < 60) {
 } else if (avg < 80) {
   console.log("C");
 }
-
-// salary ni 2 sayaas ih,
-// niigmiin daatgaliin shimtgel toldog bh,
-// passporttoi eswel identity cardtai bh,
-// bas person eswel itgemjleheer bh,
-// dept ni 1 sayas baga bwal zeel garna.
