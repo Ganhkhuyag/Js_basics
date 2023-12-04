@@ -1,8 +1,5 @@
 function y(x) {
-    a = x % 100;
-    b = a-3/10;
-    c = 
-
+  a = x % 100;
 }
 let result = y(123);
 console.log(result);

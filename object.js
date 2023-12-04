@@ -28,7 +28,7 @@ console.log(city[5]);
 console.log(city[6]);
 console.log(city[7]);
 
-let mongolia = {
+let Mongolia = {
   Khovd: "94994",
   Uvs: "88,672",
   Zavkhan: "108,530	",
@@ -138,37 +138,3 @@ console.log(State.Tuv.provinceName);
 console.log(State.Sukhbaatar.provinceName);
 console.log(State.Omnogovi.provinceName);
 console.log(State.Dornogovi.provinceName);
-
-//salary ni 2 sayaas ih,
-//insurance toldog bh,
-//passporttoi eswel identitycardtai bh,
-//bas person bh eswel itgemjleheer bh,
-//dept ni 1 sayas baga bwal zeel garna.
-
-function loan(salary, insurance, inperson, cred, dept, passport, identityCard) {
-  if (
-    salary > 10 &&
-    insurance > 1 &&
-    (inperson || cred) &&
-    dept < 1000000 &&
-    (passport || identityCard)
-  ) {
-    console.log("yes");
-  } else console.log("no");
-}
-loan(
-  11,
-  2,
-  (inperson = false),
-  (cred = true),
-  50000,
-  (passport = false),
-  (identityCard = true)
-);
-
-// if its raining today, take umberella
-// if its snowing today take umberella
-// if its too sunny today take umberella
-
-// ogogdson toog 5 bolon 11t huvaagddag eshiig tootsog function bich.
-// too 5d huvaagdana gehdee 11t huvaagdahgui
