@@ -57,6 +57,9 @@ let sportmans = [
     scores: [40, 28, 32, 14],
   },
 ];
+
+// 1. Ehnii tamirchnii dundaj onoog ol.
+
 let sum =
   sportmans[0].scores[0] +
   sportmans[0].scores[1] +
@@ -65,6 +68,8 @@ let sum =
 let avg = sum / 4;
 console.log(avg);
 
+// 2. 2 dahi tamirchnii dundaj onoog ol.
+
 let result =
   sportmans[1].scores[0] +
   sportmans[1].scores[1] +
@@ -72,6 +77,8 @@ let result =
   sportmans[1].scores[3];
 let average = result / 4;
 console.log(average);
+
+// 3. Hamgiin zaluu tamirchniig ol.
 
 function findYoung() {
   let young = sportmans[0].age;
