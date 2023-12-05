@@ -5,7 +5,7 @@
 // 2. 2 dahi tamirchnii dundaj onoog ol.
 // 3. Hamgiin zaluu tamirchniig ol.
 
-let sportmans = [
+let Atheles = [
   {
     name: "Dorjoo",
     age: "22",
@@ -61,20 +61,20 @@ let sportmans = [
 // 1. Ehnii tamirchnii dundaj onoog ol.
 
 let sum =
-  sportmans[0].scores[0] +
-  sportmans[0].scores[1] +
-  sportmans[0].scores[2] +
-  sportmans[0].scores[3];
+  Atheles[0].scores[0] +
+  Atheles[0].scores[1] +
+  Atheles[0].scores[2] +
+  Atheles[0].scores[3];
 let avg = sum / 4;
 console.log(avg);
 
 // 2. 2 dahi tamirchnii dundaj onoog ol.
 
 let result =
-  sportmans[1].scores[0] +
-  sportmans[1].scores[1] +
-  sportmans[1].scores[2] +
-  sportmans[1].scores[3];
+  Atheles[1].scores[0] +
+  Atheles[1].scores[1] +
+  Atheles[1].scores[2] +
+  Atheles[1].scores[3];
 let average = result / 4;
 console.log(average);
 
