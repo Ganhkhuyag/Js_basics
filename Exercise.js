@@ -60,24 +60,27 @@ let Atheles = [
 
 // 1. Ehnii tamirchnii dundaj onoog ol.
 
-// let sum =
-//   Atheles[0].scores[0] +
-//   Atheles[0].scores[1] +
-//   Atheles[0].scores[2] +
-//   Atheles[0].scores[3];
-// let avg = sum / 4;
-// console.log(avg);
+// // let sum =
+// //   Atheles[0].scores[0] +
+// //   Atheles[0].scores[1] +
+// //   Atheles[0].scores[2] +
+// //   Atheles[0].scores[3];
+// // let avg = sum / 4;
+// // console.log(avg);
 
-// 2. 2 dahi tamirchnii dundaj onoog ol.
+// // 2. 2 dahi tamirchnii dundaj onoog ol.
 
-let sumScores = 0;
-let avgScores = 0;
-for (let i = 0; i < Atheles[1].scores[i]; i = i + 1) {
-  sumScores = sumScores + Atheles[1].scores[i];
+function y(Atheles) {
+  let sumScores = 0;
+  let avgScores = 0;
+  for (let i = 0; i < Atheles[1].scores[i]; i = i + 1) {
+    sumScores = sumScores + Atheles[1].scores[i];
+  }
+  console.log("sumPrice", sumScores);
+  avgScores = sumScores / 4;
+  console.log("avgScores", avgScores);
 }
-console.log("sumPrice", sumScores);
-avgScores = sumScores / 4;
-console.log("avgScores", avgScores);
+y(Atheles);
 
 // 3. Hamgiin zaluu tamirchniig ol.
 
@@ -88,6 +91,6 @@ function findYoung() {
       young = Atheles[i].age;
     }
   }
-  console.log(young);
+  console.log("Young", young);
 }
 findYoung();

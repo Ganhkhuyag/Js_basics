@@ -11,10 +11,10 @@ let products = [
     stock: "400",
   },
   {
-    name: "camera",
-    price: 2500000,
-    category: "electronic",
-    brand: "LG",
+    name: "Sneaker",
+    price: 250000,
+    category: "clothes",
+    brand: "Nike",
     stock: "25",
   },
   {
@@ -32,10 +32,10 @@ let products = [
     stock: 20,
   },
   {
-    name: "water boiler",
+    name: "Shoe",
     price: 150000,
-    category: "electronic",
-    brand: "Midea",
+    category: "lothes",
+    brand: "Martens",
     stock: 35,
   },
   {
@@ -97,7 +97,7 @@ let products = [
 //     }
 //   }
 // }
-// findByCategory("electronics");
+// findByCategory("clothes");
 
 // function findMostExpensive() {
 //   let mostExpensive = products[3].price;
