@@ -1,6 +1,5 @@
 function Month(year, month) {
-  let product = year * 12;
-  let sum = product + month;
+  sum = year * 12 + month;
   return sum;
 }
 let result = Month(2, 7);

@@ -1,5 +1,8 @@
 function y(x) {
-  a = x % 100;
+  a = x % 10;
+  b = parseInt((x / 10) % 10);
+  c = parseInt(x / 100);
+  sum = a + b + c;
+  console.log(sum);
 }
-let result = y(123);
-console.log(result);
+y(123);

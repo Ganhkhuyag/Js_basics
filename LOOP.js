@@ -20,3 +20,11 @@ for (console.log("initialize"); num < 7; console.log("update")) {
   num = num + 1;
   console.log("body");
 }
+function y(n) {
+  sum = 1;
+  for (i = 0; i <= n; i = i + 1) {
+    sum = sum * 2;
+  }
+  console.log(sum);
+}
+y(5);

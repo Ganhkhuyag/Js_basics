@@ -5,7 +5,7 @@
 let products = [
   {
     name: "macbook",
-    price: 4000000,
+    price: 3000000,
     category: "electronics",
     brand: "Apple",
     stock: "400",
@@ -74,8 +74,9 @@ let products = [
     stock: 40,
   },
 ];
+// console.log(products.length);
 
-//discount
+// //discount
 
 // function setSale(saleAmout) {
 //   for (let i = 0; i < 10; i = i + 1) {
@@ -98,13 +99,51 @@ let products = [
 // }
 // findByCategory("electronics");
 
-function findMostExpensive() {
-  let mostExpensive = products[3].price;
-  for (i = 0; i < 10; i = i + 1) {
-    if (mostExpensive < products[i].price) {
-      mostExpensive = products[i].price;
+// function findMostExpensive() {
+//   let mostExpensive = products[3].price;
+//   for (i = 0; i < 10; i = i + 1) {
+//     if (mostExpensive < products[i].price) {
+//       mostExpensive = products[i].price;
+//     }
+//   }
+//   console.log(mostExpensive);
+// }
+// findMostExpensive();
+
+// function lessStock() {
+//   let lessStock = products[4].stock;
+//   for (i = 0; i < 10; i = i + 1) {
+//     if (lessStock > products[i].stock) {
+//       lessStock = products[i].stock;
+//     }
+//   }
+//   console.log(lessStock);
+// }
+// lessStock();
+
+//
+
+function findAboveAvg(prods) {
+  let avgPrice = 0;
+  let sumPrice = 0;
+  for (let i = 0; i < prods.length; i = i + 1) {
+    sumPrice = sumPrice + prods[i].price;
+  }
+  console.log("sumPrice:", sumPrice);
+  avgPrice = sumPrice / prods.length;
+
+  // now filter price above avg
+
+  let filterdProd = [];
+  let count = 0;
+  for (let i = 0; i < prods.length; i++) {
+    if (prods[i].price > avgPrice) {
+      filterdProd[count] = prods[i];
+      count++;
     }
   }
-  console.log(mostExpensive);
+  return filterdProd;
 }
-findMostExpensive();
+
+let aboveAVG = findAboveAvg(products);
+console.log("aboveAVG:", aboveAVG);

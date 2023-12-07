@@ -50,36 +50,48 @@ function findMonth(num) {
     return "jan";
   } else if (num <= 59) {
     return "feb";
-  } else if (num <= 89) {
+  }
+  if (num <= 89) {
     return "mar";
-  } else if (num <= 109) {
+  }
+  if (num <= 109) {
     return "apr";
-  } else if (num <= 139) {
+  }
+  if (num <= 139) {
     return "may";
-  } else if (num <= 169) {
+  }
+  if (num <= 169) {
     return "jun";
-  } else if (num <= 199) {
+  }
+  if (num <= 199) {
     return "jul";
-  } else if (num <= 233) {
+  }
+  if (num <= 233) {
     return "aug";
-  } else if (num <= 263) {
+  }
+  if (num <= 263) {
     return "sep";
-  } else if (num <= 293) {
+  }
+  if (num <= 293) {
     return "oct";
-  } else if (num <= 320) {
+  }
+  if (num <= 320) {
     return "nov";
-  } else if (num <= 350) {
+  }
+  if (num <= 350) {
     return "dec";
   }
 }
-console.log(findMonth(100));
+console.log(findMonth(350));
 
 function find(avg) {
   if (avg < 60) {
     return "F";
-  } else if (avg < 70) {
+  }
+  if (avg < 70) {
     return "D";
-  } else if (avg < 80) {
+  }
+  if (avg < 80) {
     return "C";
   }
 }

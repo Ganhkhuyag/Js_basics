@@ -1,13 +1,16 @@
-function findSeason(num) {
-  if (num <= 2) {
-    return "spring";
-  } else if (num <= 3) {
-    return "spring";
-  } else if (num <= 4) {
-    return "spring";
-  } else if ((num <= 5, 6, 7)) {
-    return "summer";
+function y(num) {
+  if (num > 1 && 5 > num) {
+    console.log("spring");
+  }
+  if (num > 4 && 8 > num) {
+    console.log("summer");
+  }
+  if (num > 7 && 11 > num) {
+    console.log("autum");
+  }
+  if (num > 10 && 2 > num) {
+    console.log("winter");
   }
 }
 
-console.log(findSeason(3));
+y(12);
