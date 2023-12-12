@@ -76,7 +76,7 @@ function y(Atheles) {
   for (let i = 0; i < Atheles[1].scores[i]; i = i + 1) {
     sumScores = sumScores + Atheles[1].scores[i];
   }
-  console.log("sumPrice", sumScores);
+  console.log("sumScores", sumScores);
   avgScores = sumScores / 4;
   console.log("avgScores", avgScores);
 }

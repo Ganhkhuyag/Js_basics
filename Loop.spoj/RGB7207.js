@@ -4,7 +4,7 @@ function y(a, n) {
   let sum = 0;
   for (i = 1; i <= n; i++) {
     sum = sum + a;
+    console.log("i = " + i + " baihad sum= " + sum);
   }
-  console.log(sum);
 }
 y(50, 6);

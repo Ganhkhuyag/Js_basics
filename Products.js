@@ -76,7 +76,7 @@ let products = [
 ];
 // console.log(products.length);
 
-// //discount
+// discount - 10%
 
 // function setSale(saleAmout) {
 //   for (let i = 0; i < 10; i = i + 1) {
@@ -86,7 +86,7 @@ let products = [
 // setSale(10);
 // console.log(products);
 
-// for (let i = 0; i < 10; i = i + 1) {
+// // for (let i = 0; i < 10; i = i + 1) {
 //   console.log(i, "=>", products[i]);
 // }
 
@@ -99,6 +99,8 @@ let products = [
 // }
 // findByCategory("clothes");
 
+// Expensive
+
 // function findMostExpensive() {
 //   let mostExpensive = products[3].price;
 //   for (i = 0; i < 10; i = i + 1) {
@@ -109,6 +111,8 @@ let products = [
 //   console.log(mostExpensive);
 // }
 // findMostExpensive();
+
+// Less stock
 
 // function lessStock() {
 //   let lessStock = products[4].stock;
@@ -121,7 +125,7 @@ let products = [
 // }
 // lessStock();
 
-//
+// Dundjaas deesh uneteig ni ol.
 
 function findAboveAvg(prods) {
   let avgPrice = 0;
@@ -131,6 +135,9 @@ function findAboveAvg(prods) {
   }
   console.log("sumPrice:", sumPrice);
   avgPrice = sumPrice / prods.length;
+  console.log("AvgPrice", avgPrice);
+  // }
+  // findAboveAvg(products);
 
   // now filter price above avg
 
@@ -144,6 +151,5 @@ function findAboveAvg(prods) {
   }
   return filterdProd;
 }
-
 let aboveAVG = findAboveAvg(products);
 console.log("aboveAVG:", aboveAVG);

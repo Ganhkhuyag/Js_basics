@@ -19,9 +19,24 @@ function loan(salary, id, pass, insurance, inperson, cred, dept) {
 }
 loan(2100000, "true", "false", "true", "true", "false", 500000);
 
-// if its raining today, take umberella
+//its raining today take umberella
 // if its snowing today take umberella
 // if its too sunny today take umberella
 
+function weather(n1, n2, n3) {
+  if (n1 == "yes" || n2 == "yes" || n3 == "no") {
+    console.log("yes");
+  } else {
+    console.log("no");
+  }
+}
+weather("yes", "yes", "no");
+
 // ogogdson toog 5 bolon 11t huvaagddag eshiig tootsog function bich.
 // too 5d huvaagdana gehdee 11t huvaagdahgui
+function y(n) {
+  if (n % 5 == 0 && n % 11 != 0) {
+    console.log("yes");
+  } else console.log("no");
+}
+y(22);

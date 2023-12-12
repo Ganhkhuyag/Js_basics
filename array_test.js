@@ -21,3 +21,4 @@ let iphone15 = {
   ],
 };
 iphone15.prices[2].price = iphone15.prices[2].price * 0.9;
+console.log(iphone15);

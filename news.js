@@ -73,6 +73,26 @@ let news = [
   },
 ];
 
-filterbyDate(last, first);
-filterbyAuthor();
-filterbyCategory();
+function findAuthor(person) {
+  for (let i = 0; i < 10; i = i + 1) {
+    if (news[i].Author == person) {
+      console.log(news[i]);
+    }
+  }
+}
+findAuthor("Azbayr");
+
+function findCategory(cate) {
+  for (let i = 0; i < 10; i = i + 1) {
+    if (news[i].category == cate) {
+      console.log(news[i]);
+    }
+  }
+}
+findCategory("Tech");
+
+// filterbyAuthor();
+
+// filterbyCategory();
+
+// filterbyDate(last, first);
