@@ -5,4 +5,4 @@ function findProduct(x) {
   return c;
 }
 let result = findProduct(27);
-console.log(result);
+console.log("result:", result);

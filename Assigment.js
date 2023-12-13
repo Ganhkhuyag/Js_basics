@@ -18,14 +18,15 @@ y(150, 90);
 
 // 3.
 
-function y(num1, num2, num3) {
-  let array = [];
-  let index = 0;
-  for (i = num1; i <= num2; i = i + num3) {
-    console.log("i", i);
-    array[index] = i;
-    index++;
+array = [10, 20, 30, 40, 50];
+function y(array) {
+  let sum = 0;
+  let avg = 0;
+  for (let i = 0; i < array[i]; i++) {
+    sum = sum + array[i];
+    console.log("i = " + i + "baihad niilber = " + sum);
   }
-  return array;
+  avg = sum / 5;
+  console.log(avg);
 }
-console.log(y(10, 20, 2));
+y(array);

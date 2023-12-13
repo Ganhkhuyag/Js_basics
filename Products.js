@@ -6,7 +6,7 @@ let products = [
   {
     name: "macbook",
     price: 3000000,
-    category: "electronics",
+    category: "electronic",
     brand: "Apple",
     stock: "400",
   },
@@ -20,7 +20,7 @@ let products = [
   {
     name: "s23",
     price: 2000000,
-    category: "electronics",
+    category: "electronic",
     brand: "Samsung",
     stock: 10,
   },
@@ -34,14 +34,14 @@ let products = [
   {
     name: "Shoe",
     price: 150000,
-    category: "lothes",
+    category: "clothes",
     brand: "Martens",
     stock: 35,
   },
   {
     name: "rice cooker",
     price: 1800000,
-    category: "electronics",
+    category: "electronic",
     brand: "Akira",
     stock: 18,
   },
@@ -55,7 +55,7 @@ let products = [
   {
     name: "vacuum cleaner",
     price: 800000,
-    category: "electronics",
+    category: "electronic",
     brand: "Sharp",
     stock: 20,
   },
@@ -69,12 +69,11 @@ let products = [
   {
     name: "clothes iron",
     price: 465000,
-    category: "electronics",
+    category: "electronic",
     brand: "Philips",
     stock: 40,
   },
 ];
-// console.log(products.length);
 
 // discount - 10%
 
@@ -140,6 +139,7 @@ function findAboveAvg(prods) {
   // findAboveAvg(products);
 
   // now filter price above avg
+  //Filter: boolean utga butsaana. shine element garahgvi. trueg tuuj butsaana.
 
   let filterdProd = [];
   let count = 0;
