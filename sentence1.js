@@ -15,37 +15,3 @@ for (let i = 0; i < sentence.length; i++) {
   }
 }
 console.log(array);
-
-let x = `Number pattern is a series Jof numbers arranged in specific order. These patterns are patterns created by numbers and are similar to star patterns. They are best suited to enhance your logical thinking abilities and to practice flow control statements.`;
-let countedArr = [];
-let alphabet = "abcdefghijklmnopqrstuvwxyz";
-let alphabetBig = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-function y(x) {
-  for (let j = 0; j < alphabet.length; j++) {
-    let charCount = 0;
-    // countedArr[j] = 0;
-    for (let i = 0; i < x.length; i++) {
-      //   console.log(
-      //     "useg ni ",
-      //     alphabet[j],
-      //     "shalgaj baigaa useg",
-      //     x[i],
-      //     "charCount: ",
-      //     charCount
-      //   );
-
-      if (x[i] == alphabet[j] || x[i] == alphabetBig[j]) {
-        charCount += 1;
-      }
-      countedArr[j] = charCount;
-    }
-    if ((charCount = 0)) {
-      countedArr[j] = 0;
-    }
-  }
-  return countedArr;
-}
-
-console.log(x.length);
-console.log(y(x));
