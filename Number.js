@@ -37,25 +37,24 @@ console.log(findPrime(1, 9));
 // primes[2] = 5;
 // primes[3] = 7;
 
-function isPrime(num1) {
+function isPrime(num) {
   let prime = true;
-  if (num1 == 1) return false;
-  for (let i = 2; i < num1; i++) {
-    // console.log("i", i);
-    if (num1 % i == 0) {
+  if (num == 1) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
       prime = false;
     }
   }
   return prime;
 }
-console.log(isPrime(100));
+console.log(isPrime(89));
 
-// min-max zavsar dahi prime
+// min,max zavsar dahi prime number
 
 function y(min, max) {
   let array = [];
-  let index = 0;
-  for (i = min; i < max; i++) {
+  index = 0;
+  for (let i = min; i <= max; i++) {
     if (isPrime(i)) {
       array[index] = i;
       index++;
@@ -63,5 +62,4 @@ function y(min, max) {
   }
   return array;
 }
-let result = y(1, 20);
-console.log("result:", result);
+console.log(y(10, 100));

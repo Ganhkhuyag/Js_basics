@@ -84,7 +84,7 @@ y(Atheles);
 
 // 3. Hamgiin zaluu tamirchniig ol.
 
-function findYoung() {
+function findYoung(Atheles) {
   let young = Atheles[0].age;
   for (i = 0; i < Atheles.length; i = i + 1) {
     if (young > Atheles[i].age) {
@@ -93,4 +93,4 @@ function findYoung() {
   }
   console.log("Young", young);
 }
-findYoung();
+findYoung(Atheles);

@@ -5,7 +5,7 @@ I have tried my best to explain the logic of each pattern individually`;
 let str = "";
 let array = [];
 let index = 0;
-for (let i = 0; i < sentence.length; i++) {
+for (i = 0; i < sentence.length; i++) {
   if (sentence[i] == " ") {
     array[index] = str;
     str = "";
