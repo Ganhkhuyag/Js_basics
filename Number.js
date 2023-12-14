@@ -63,3 +63,32 @@ function y(min, max) {
   return array;
 }
 console.log(y(10, 100));
+
+function isPrime(num) {
+  let prime = true;
+  if (num == 1) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      prime = false;
+    }
+  }
+  return prime;
+}
+let resul = isPrime(2);
+console.log("result:", resul);
+
+// min,max hoorondoh prime number
+
+function y(min, max) {
+  let array = [];
+  let count = 0;
+  for (let i = min; i <= max; i++) {
+    if (isPrime(i)) {
+      array[count] = i;
+      count++;
+    }
+  }
+  return array;
+}
+let result = y(1, 50);
+console.log(result);

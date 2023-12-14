@@ -83,10 +83,6 @@ console.log("filterbybrands:", filterbybrands);
 // filterbyPrice(max,min)
 
 // let filterbyPrice =
-let Price = products.map((a) => {
-  return a.stock;
-});
-console.log(stock);
 
 let stock = products.map((a) => {
   return a.stock;
