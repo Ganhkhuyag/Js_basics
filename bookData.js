@@ -141,42 +141,49 @@ const bookData = [
   },
 ];
 
-// find Expensive book more than 12
-// find 12-18 priced range books
-// sort books by rating
-// find more than 20 length books
-// add summary on object by like this `A captivating book by ${book.author}.
+// ----------find Expensive book more than 12------------------
 
-function palindromNumber(num) {
-  let minNum = 0;
-  let digit = 0;
-  let count = 0;
-  let rev = num;
-  let reverse = 0;
-  let checkNum = num;
-  let palin = 0;
-  if (num < 10) {
-    minNum = num;
-  } else {
-    for (let i = 0; i < num; i++) {
-      digit = num % 10;
-      num = (num - digit) / 10;
-      if (digit >= 0) {
-        count++;
-      }
-    }
-    for (let j = 0; j < count; j++) {
-      minNum = rev % 10;
-      rev = (rev - minNum) / 10;
-      minNum = minNum * 10 ** (count - j);
-      reverse = reverse + minNum;
-    }
-    palin = reverse + rev;
-  }
-  if (palin == checkNum) {
-    console.log("Yes this is the Palindrom number");
-  } else {
-    console.log("No this is not the Palindrom number");
-  }
-}
-palindromNumber(34541);
+// let findPrice = bookData.filter((a) => {
+//   return a.price >= 12;
+// });
+// console.log(findPrice);
+
+// // ----------find 12-18 priced range books----------------
+
+// let findprices = bookData.filter((a) => {
+//   return a.price >= 12 && a.price <= 18;
+// });
+// console.log(findprices);
+
+// // -----------------sort books by rating-----------------
+
+// bookData.sort((a, b) => a.rating - b.rating);
+// console.log(bookData);
+
+// Book title iin character length ni 10 aas ihiin awdag function bich, tedgeeriin price range iig ni oor function oor garga
+
+const findbyTitle = (num1, num2, num3) => {
+  let findtitle = bookData.filter((a) => {
+    return a.title.length >= num1;
+  });
+  let findByRange = findtitle.filter((a) => {
+    return a.price >= num2 && a.price <= num3;
+  });
+  console.log(findByRange);
+};
+findbyTitle(10, 12, 20);
+
+// 12 oos ih vnetei nomnuudaas rating ni 4.7 oos deesh rating tei nomnuudiig oldog function bich.
+
+const findbyPrice = (num1, num2, num3) => {
+  let findprice = bookData.filter((a) => {
+    return a.title.length >= num1;
+  });
+  let findByRange = findtitle.filter((a) => {
+    return a.price >= num2 && a.price <= num3;
+  });
+  console.log(findByRange);
+};
+findbyTitle(10, 12, 20);
+
+// add summary on object by like this `A captivating book by ${book.author}.
