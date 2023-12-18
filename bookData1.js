@@ -141,9 +141,9 @@ const bookData = [
   },
 ];
 
-
-
-	
 //Book title iin character length ni 10 aas ihiin awdag function bich, tedgeeriin price range iig ni oor function oor garga
-	
+const findCharacter = ((element) => {
+  return element.title >= 10;
+)};
 //12 oos ih vnetei nomnuudaas rating ni 4.7 oos deesh rating tei nomnuudiig oldog function bich
+ const find12 = 

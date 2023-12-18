@@ -1,14 +1,14 @@
 function y(num) {
-  if (num > 1 && 5 > num) {
+  if (num == 2 || num == 3 || num == 4) {
     console.log("spring");
   }
-  if (num > 4 && 8 > num) {
+  if (num == 5 || num == 6 || num == 7) {
     console.log("summer");
   }
-  if (num > 7 && 11 > num) {
+  if (num == 8 || num == 9 || num == 10) {
     console.log("autum");
   }
-  if (num > 10 && 2 > num) {
+  if (num == 11 || num == 12 || num == 1) {
     console.log("winter");
   }
 }

@@ -56,7 +56,7 @@ let Atheles = [
 
 // 1. Ehnii tamirchnii dundaj onoog ol.
 
-function Athele() {
+function Athele(Atheles) {
   let sumScores = 0;
   let avgScores = 0;
   for (let i = 0; i < Atheles[0].scores[i]; i = i + 1) {
@@ -66,7 +66,7 @@ function Athele() {
   avgScores = sumScores / 4;
   console.log(avgScores);
 }
-Athele();
+Athele(Atheles);
 
 // // let sum =
 // //   Atheles[0].scores[0] +
@@ -78,7 +78,7 @@ Athele();
 
 // // 2. 2 dahi tamirchnii dundaj onoog ol.
 
-function y(Ath2eles) {
+function y(Atheles) {
   let sumScores = 0;
   let avgScores = 0;
   for (let i = 0; i < Atheles[1].scores[i]; i = i + 1) {
