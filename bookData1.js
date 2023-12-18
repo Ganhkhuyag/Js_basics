@@ -141,49 +141,9 @@ const bookData = [
   },
 ];
 
-// ----------find Expensive book more than 12------------------
 
-// let findPrice = bookData.filter((a) => {
-//   return a.price >= 12;
-// });
-// console.log(findPrice);
 
-// // ----------find 12-18 priced range books----------------
-
-// let findprices = bookData.filter((a) => {
-//   return a.price >= 12 && a.price <= 18;
-// });
-// console.log(findprices);
-
-// -----------------sort books by rating-----------------
-
-// bookData.sort((a, b) => a.rating - b.rating);
-// console.log(bookData);
-
-// Book title iin character length ni 10 aas ihiin awdag function bich, tedgeeriin price range iig ni oor function oor garga
-
-const findbyTitle = (num1, num2, num3) => {
-  let findtitle = bookData.filter((a) => {
-    return a.title.length >= num1;
-  });
-  let findByRange = findtitle.filter((a) => {
-    return a.price >= num2 && a.price <= num3;
-  });
-  console.log(findByRange);
-};
-findbyTitle(10, 12, 20);
-
-// 12 oos ih vnetei nomnuudaas rating ni 4.7 oos deesh rating tei nomnuudiig oldog function bich.
-
-const y = (num1, num2) => {
-  let findprice = bookData.filter((a) => {
-    return a.price >= num1;
-  });
-  let findByRange = findprice.filter((a) => {
-    return a.rating >= num2;
-  });
-  console.log(findByRange);
-};
-y(12, 4.7);
-
-// add summary on object by like this `A captivating book by ${book.author}.
+	
+//Book title iin character length ni 10 aas ihiin awdag function bich, tedgeeriin price range iig ni oor function oor garga
+	
+//12 oos ih vnetei nomnuudaas rating ni 4.7 oos deesh rating tei nomnuudiig oldog function bich

@@ -140,21 +140,44 @@ const employees = [
     performanceRating: 4.9,
   },
 ];
+let result = employees.filter((employee) => {
+  return {
+    position: employee.position,
+    salary: employee.salary,
+  };
+});
+console.log(result);
+// me code
+
+const highPaidEmployeesByDepartment = (employee, department, salaryLine) => {
+  const answer = employee.filter(
+    (a) => a.department == department && a.salary > salaryLine
+  );
+  return answer;
+};
+console.log(highPaidEmployeesByDepartment(employees, "Finance", 90000));
 
 // Task 1 High paid employee by department
 
 const highPaidEmployees = (employees, department, thresholdSalary) => {
   const answer = employees.filter(
     (employee) =>
-      employee.department == department && employee.salary > thresholdSalary
+      employee.department === department && employee.salary > thresholdSalary
   );
   return answer;
 };
 console.log("Finance", highPaidEmployees(employees, "Finance", 90000));
-console.log("Engineering", highPaidEmployees(employees, "Engineering", 90000));
+
+//me code
+const topPerformer = (employees, ratingLine) => {
+  const answer = employees
+    .filter((a) => a.performanceRating >= ratingLine)
+    .map(({ name, performanceRating }) => ({ name, performanceRating }));
+  return answer;
+};
+console.log(topPerformer(employees, 4.8));
 
 // Task 2 Find top performers employee
-
 const topPerformersReport = (employees, minRating) => {
   const topPerformers = employees
     .filter((employee) => employee.performanceRating >= minRating)
@@ -163,10 +186,14 @@ const topPerformersReport = (employees, minRating) => {
 };
 console.log(topPerformersReport(employees, 4.8));
 
-let result = employees.map((employee) => {
-  return {
-    position: employee.position,
-    salary: employee.salary,
-  };
-});
-console.log(result);
+let num = "1234";
+let numstr = num.toString();
+// let strNum = 123;
+// let numFromStru = Number(strNum);
+console.log(typeof numstr);
+
+let word = "Hello world";
+for (let i = 0; i < word.length; i++) {
+  console.log(word.charAt(i));
+}
+console.log(word);

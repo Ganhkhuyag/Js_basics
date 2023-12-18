@@ -1,10 +1,6 @@
 // Dor hayj 10n object tei array zohio.
 // 10n tamirchidiin onoog tootsdog program bichne.
 
-// 1. Ehnii tamirchnii dundaj onoog ol.
-// 2. 2 dahi tamirchnii dundaj onoog ol.
-// 3. Hamgiin zaluu tamirchniig ol.
-
 let Atheles = [
   {
     name: "Dorjoo",
@@ -60,6 +56,18 @@ let Atheles = [
 
 // 1. Ehnii tamirchnii dundaj onoog ol.
 
+function Athele() {
+  let sumScores = 0;
+  let avgScores = 0;
+  for (let i = 0; i < Atheles[0].scores[i]; i = i + 1) {
+    sumScores = sumScores + Atheles[0].scores[i];
+  }
+  console.log(sumScores);
+  avgScores = sumScores / 4;
+  console.log(avgScores);
+}
+Athele();
+
 // // let sum =
 // //   Atheles[0].scores[0] +
 // //   Atheles[0].scores[1] +
@@ -70,7 +78,7 @@ let Atheles = [
 
 // // 2. 2 dahi tamirchnii dundaj onoog ol.
 
-function y(Atheles) {
+function y(Ath2eles) {
   let sumScores = 0;
   let avgScores = 0;
   for (let i = 0; i < Atheles[1].scores[i]; i = i + 1) {

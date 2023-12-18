@@ -27,5 +27,21 @@ const shoppingCartItems = [
 ];
 
 // task write a function calculateCategoryCosts return a object of {name: name, totalcost:???}
+function discount(x) {
+  let dis = shoppingCartItems.map((discountPrice) => {
+    return {
+      name: discountPrice.name,
+      totalPrice:
+        (discountPrice.quantity * discountPrice.price * (100 - x)) / 100,
+    };
+  });
+  return dis;
+}
+console.log(discount(10));
+
+let dis = shoppingCartItems.filter((a) => {
+  return a.quantity > 2;
+});
+console.log(dis);
 // dicounttai product uudiin bvh price iin dundajiig olood
 // dundajaas ih bolon baga productuudiig gargaj ir

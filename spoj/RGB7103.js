@@ -1,4 +1,4 @@
-function bigNumber(a, b, c, d) {
+function bigNumber(a, b, c) {
   if (a > b && a > c) {
     return a;
   } else if (b > a && b > c) {
@@ -7,5 +7,5 @@ function bigNumber(a, b, c, d) {
     return c;
   }
 }
-let result = bigNumber(5, 9, 6);
+let result = bigNumber(5, 9, 10);
 console.log(result);

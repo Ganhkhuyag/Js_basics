@@ -9,7 +9,7 @@ let display = [
   { brand: "sony", inch: "31", price: 300000, year: "2021" },
 ];
 
-display[0].price = display[0].price * 0.9;
+display[0].price = display[0].price * (1 - 10 / 100);
 console.log(display);
 
 let iphone15 = {

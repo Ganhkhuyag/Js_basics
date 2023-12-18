@@ -74,26 +74,34 @@ let products = [
 ];
 // products dotroosoo brand eer ni yalgaj chaddag func bicheh
 
-let brands = "TCL";
-let filterbybrands = products.filter((a) => {
-  return a.brand == brands;
-});
-console.log("filterbybrands:", filterbybrands);
+// let brands = "TCL";
+// let filterbybrands = products.filter((a) => {
+//   return a.brand == brands;
+// });
+// console.log("filterbybrands:", filterbybrands);
 
 // filterbyPrice(max,min)
 
 // let filterbyPrice =
 
 let stock = products.map((a) => {
-  return a.stock;
+  return a.price;
 });
 console.log(stock);
 
 let sortByStock = products.sort((a, b) => {
-  if (a.stock > b.stock) {
+  if (a.stock - b.stock) {
     return -1;
   } else {
     return 1;
   }
 });
 console.log("sorted by stock", sortByStock);
+
+products.sort((a, b) => a.price - b.price);
+console.log(products);
+
+// products.sort((a, b) => {
+//   return b.stock - a.stock;
+// });
+// console.log(products);

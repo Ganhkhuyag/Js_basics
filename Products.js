@@ -77,26 +77,26 @@ let products = [
 
 // discount - 10%
 
-// function setSale(saleAmout) {
-//   for (let i = 0; i < 10; i = i + 1) {
-//     products[i].price = products[i].price * (1 - saleAmout / 100);
-//   }
-// }
-// setSale(10);
-// console.log(products);
+function setSale(saleAmout) {
+  for (let i = 0; i < products.length; i = i + 1) {
+    products[i].price = products[i].price * (1 - saleAmout / 100);
+  }
+}
+setSale(10);
+console.log(products);
 
 // // for (let i = 0; i < 10; i = i + 1) {
 //   console.log(i, "=>", products[i]);
 // }
 
-// function findByCategory(cate) {
-//   for (let i = 0; i < 10; i = i + 1) {
-//     if (products[i].category == cate) {
-//       console.log(products[i]);
-//     }
-//   }
-// }
-// findByCategory("clothes");
+function findByCategory(cate) {
+  for (let i = 0; i < 10; i = i + 1) {
+    if (products[i].category == cate) {
+      console.log(products[i]);
+    }
+  }
+}
+findByCategory("clothes");
 
 // Expensive
 
