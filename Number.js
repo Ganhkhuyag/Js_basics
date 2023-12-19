@@ -4,14 +4,14 @@ function isPrime(n) {
   let prime = true;
   if (n == 1) return false;
   for (let i = 2; i < n; i = i + 1) {
-    // console.log("i", i);
+    console.log("i", i);
     if (n % i == 0) {
       prime = false;
     }
   }
   return prime;
 }
-// console.log(isPrime(98));
+console.log(isPrime(98));
 
 // min-max zavsar dahi prime
 
@@ -37,58 +37,30 @@ console.log(findPrime(1, 9));
 // primes[2] = 5;
 // primes[3] = 7;
 
-function isPrime(num) {
+function findisPrime(num) {
   let prime = true;
   if (num == 1) return false;
   for (let i = 2; i < num; i++) {
+    console.log("i:", i);
     if (num % i == 0) {
       prime = false;
     }
   }
   return prime;
 }
-console.log(isPrime(89));
-
-// min,max zavsar dahi prime number
+console.log(findisPrime(100));
 
 function y(min, max) {
   let array = [];
-  index = 0;
+  let index = 0;
   for (let i = min; i <= max; i++) {
-    if (isPrime(i)) {
+    // console.log("i:", i);
+    if (findisPrime(i)) {
+      // console.log("index:", index, "i:", i);
       array[index] = i;
       index++;
     }
   }
   return array;
 }
-console.log(y(10, 100));
-
-function isPrime(num) {
-  let prime = true;
-  if (num == 1) return false;
-  for (let i = 2; i < num; i++) {
-    if (num % i == 0) {
-      prime = false;
-    }
-  }
-  return prime;
-}
-let resul = isPrime(2);
-console.log("result:", resul);
-
-// min,max hoorondoh prime number
-
-function y(min, max) {
-  let array = [];
-  let count = 0;
-  for (let i = min; i <= max; i++) {
-    if (isPrime(i)) {
-      array[count] = i;
-      count++;
-    }
-  }
-  return array;
-}
-let result = y(1, 50);
-console.log(result);
+console.log(y(10, 40));

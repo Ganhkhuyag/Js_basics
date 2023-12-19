@@ -13,7 +13,6 @@ let products = [
     brand: "Nike",
     stock: "25",
   },
-
   {
     name: "smart tv",
     price: 1900000,
