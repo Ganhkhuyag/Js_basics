@@ -202,7 +202,7 @@ const products = [
 // 2.Class, src -> attribute utga onooh - cardDiv.setAttribute("class", "className")  - class, id, src attribute nemj bn
 //                         cardDiv.setAttribute("src", "img-url")
 // 3. Element dotor utga onooh - .innerText =
-const root = document.getElementById("root");
+// const root = document.getElementById("root");
 const cardDiv = document.createElement("div");
 cardDiv.setAttribute("class", "card");
 const cardName = document.createElement("h1");
@@ -216,6 +216,5 @@ cardDiv.appendChild(cardPrice);
 const cardImg = document.createElement("img");
 cardImg.setAttribute("src", products[0].image_url);
 cardDiv.appendChild(cardImg);
-const cardBrand = document.createElement("p");
-cardBrand.setAttribute();
+
 root.appendChild(cardDiv);
