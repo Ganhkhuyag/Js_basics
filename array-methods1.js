@@ -23,10 +23,10 @@ let newNum = nums.map((a) => {
 console.log(newNum);
 [1, 2, 3, 4, 2, 2, 1, 6, 7]; // output;
 
-// let num1 = [1, 2, 3, 4, 2, 2, 1, 6, 7];
-// for (let i = 0; i < num.length; i++) {
-//   console.log(nums[i]);
-// }
+let num1 = [1, 2, 3, 4, 2, 2, 1, 6, 7];
+for (let i = 0; i < num1.length; i++) {
+  console.log(num1[i]);
+}
 
 //-------------------------//
 

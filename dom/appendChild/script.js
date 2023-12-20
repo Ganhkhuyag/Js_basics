@@ -161,61 +161,61 @@ const products = [
 //                         cardDiv.setAttribute("src", "img-url")
 // 3. Element dotor utga onooh - .innerText =
 
-const cardDiv = document.createElement("div");
-const cardName = document.createElement("p");
-const cardBrand = document.createElement("p");
-const cardPrice = document.createElement("p");
-const cardImg = document.createElement("img");
-const cardDecs = document.createElement("p");
+// const cardDiv = document.createElement("div");
+// const cardName = document.createElement("p");
+// const cardBrand = document.createElement("p");
+// const cardPrice = document.createElement("p");
+// const cardImg = document.createElement("img");
+// const cardDecs = document.createElement("p");
 
-cardDiv.setAttribute("class", "card");
-cardName.setAttribute("class", "name");
-cardImg.setAttribute("src", products[0].image_url);
-cardBrand.setAttribute("class", "brand");
-cardPrice.setAttribute("class", "price");
-cardDecs.setAttribute("class", "desc");
+// cardDiv.setAttribute("class", "card");
+// cardName.setAttribute("class", "name");
+// cardImg.setAttribute("src", products[0].image_url);
+// cardBrand.setAttribute("class", "brand");
+// cardPrice.setAttribute("class", "price");
+// cardDecs.setAttribute("class", "desc");
 
-cardName.innerText = products[0].name;
-cardBrand.innerText = products[0].brand;
-cardDecs.innerText = products[0].description;
+// cardName.innerText = products[0].name;
+// cardBrand.innerText = products[0].brand;
+// cardDecs.innerText = products[0].description;
 
-cardDiv.appendChild(cardName);
-cardDiv.appendChild(cardBrand);
-cardDiv.appendChild(cardImg);
-cardDiv.appendChild(cardDecs);
-root.appendChild(cardDiv);
+// cardDiv.appendChild(cardName);
+// cardDiv.appendChild(cardBrand);
+// cardDiv.appendChild(cardImg);
+// cardDiv.appendChild(cardDecs);
+// root.appendChild(cardDiv);
 
-// function y(prod) {
-//   let cardDiv = document.createElement("div");
-//   cardDiv.setAttribute("class", "card");
-//   root.appendChild(cardDiv);
+function y(prod) {
+  let cardDiv = document.createElement("div");
+  cardDiv.setAttribute("class", "card");
+  root.appendChild(cardDiv);
 
-//   let cardName = document.createElement("h1");
-//   cardName.setAttribute("class", "name");
-//   cardDiv.appendChild(cardName);
-//   cardName.innerText = prod.name;
+  let cardName = document.createElement("h1");
+  cardName.setAttribute("class", "name");
+  cardDiv.appendChild(cardName);
+  cardName.innerText = prod.name;
 
-//   let cardBrand = document.createElement("p");
-//   cardBrand.setAttribute("class", "Brand");
-//   cardBrand.innerText = prod.brand;
-//   cardDiv.appendChild(cardBrand);
+  let cardBrand = document.createElement("p");
+  cardBrand.setAttribute("class", "Brand");
+  cardBrand.innerText = prod.brand;
+  cardDiv.appendChild(cardBrand);
 
-//   let cardPrice = document.createElement("p");
-//   cardPrice.setAttribute("class", "price");
-//   cardPrice.innerText = prod.price;
-//   cardDiv.appendChild(cardPrice);
+  let cardPrice = document.createElement("p");
+  cardPrice.setAttribute("class", "price");
+  cardPrice.innerText = prod.price;
+  cardDiv.appendChild(cardPrice);
 
-//   let cardImg = document.createElement("img");
-//   cardImg.setAttribute("src", prod.image_url);
-//   cardDiv.appendChild(cardImg);
+  let cardImg = document.createElement("img");
+  cardImg.setAttribute("src", prod.image_url);
+  cardDiv.appendChild(cardImg);
 
-//   let cardDecs = document.createElement("p");
-//   cardDecs.setAttribute("class", "Desc");
-//   cardDecs.innerText = prod.description;
-//   cardDiv.appendChild(cardDecs);
+  let cardDecs = document.createElement("p");
+  cardDecs.setAttribute("class", "Desc");
+  cardDecs.innerText = prod.description;
+  cardDiv.appendChild(cardDecs);
 
-//   return cardDiv;
-// }
-// products.map((prod) => {
-//   root.appendChild(y(prod));
-// });
+  return cardDiv;
+}
+products.map((prod) => {
+  root.appendChild(y(prod));
+});
