@@ -47,8 +47,8 @@ score.innerText = "Score:" + scoreP;
 
 const startBtn = document.createElement("button");
 startBtn.innerText = "Start";
-const bolomj = document.createElement("p");
 
+const bolomj = document.createElement("p");
 let BolomjN = 3;
 bolomj.setAttribute("class", "bolomj");
 bolomj.innerText = "bolomj:" + BolomjN;
