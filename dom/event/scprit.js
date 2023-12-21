@@ -28,4 +28,5 @@ containerDiv.appendChild(box);
 
 function startGame() {
   const red = Math.floor(Math.random() * 245) + 10;
+  
 }
