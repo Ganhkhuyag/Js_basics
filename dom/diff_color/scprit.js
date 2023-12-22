@@ -56,6 +56,7 @@ bolomj.innerText = "bolomj:" + BolomjN;
 headerDiv.appendChild(startBtn);
 headerDiv.appendChild(score);
 headerDiv.appendChild(bolomj);
+
 root.appendChild(headerDiv);
 
 const gamebody = document.createElement("div");

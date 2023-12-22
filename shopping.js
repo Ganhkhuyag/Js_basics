@@ -44,4 +44,5 @@ let dis = shoppingCartItems.filter((a) => {
 });
 console.log(dis);
 // dicounttai product uudiin bvh price iin dundajiig olood
+
 // dundajaas ih bolon baga productuudiig gargaj ir
