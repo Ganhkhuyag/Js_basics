@@ -5,7 +5,7 @@
 // zuv gargah:  num1, num2-iin niilber ni num3-tai tentsuu bval zuv gj garga.
 // buruu gargah: num1, num2-iin niilber ni ni num3-tai tentsuu bish bval buruu gj garga.
 
-const root = document.getElementById("root");
+const root = document.getElementById("#root");
 
 let num1 = Math.floor(Math.random() * 100);
 let num2 = Math.floor(Math.random() * 100);

@@ -35,7 +35,6 @@
 //   score.innerText = "Score:" + ScoreV;
 //   ChanceV = 3
 //   ChanceV.innerText = "Chance:" + Chance;
-
 // }
 const headerDiv = document.createElement("div");
 headerDiv.setAttribute("class", "header");
@@ -115,7 +114,6 @@ function nextStart() {
         bolomj.innerText = "bolomj:" + BolomjN;
       }
     });
-
     box.appendChild(card);
   }
   gamebody.appendChild(box);
